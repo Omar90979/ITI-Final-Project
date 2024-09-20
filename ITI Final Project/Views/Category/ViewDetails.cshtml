@@ -1,0 +1,18 @@
+﻿@model Category
+
+<div class="d-flex justify-content-center">
+    <h2>Category Details</h2>
+</div>
+
+<br />
+<br />
+<br />
+
+<div class="card" style="width: 25rem;">
+    <div class="card-body">
+        <h5 class="card-title">Category Name: @Model.Name</h5>
+        <h5 class="card-title">Category Discription: @Model.Description</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Category Id: @Model.CategoryId</h6>
+        <a asp-controller="Category" asp-action="Index" class="btn btn-primary mt-4">Back</a>
+    </div>
+</div>
